@@ -14,7 +14,9 @@ export class QuoteComponent implements OnInit {
     new Quote(3,'Get new Phone Case','Diana has her birthday coming up soon', 'TechWiz', new Date(2022,1,12)),
    
   ];
-
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   constructor() { }
 
